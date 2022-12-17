@@ -1,0 +1,4 @@
+import requests
+dataa = { "text": "مرحبا"} 
+article = requests.post(f"https://languagedetectionapi.herokuapp.com/predict",json=dataa)
+article.text
